@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "auto-abi"
+version = "0.1.0"
+description = ""
+authors = ["gmandonnan <gabedonnan@hotmail.co.uk>"]
+readme = "README.md"
+packages = [{include = "auto_abi"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+eth-abi = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
