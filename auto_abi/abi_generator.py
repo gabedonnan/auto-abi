@@ -23,7 +23,7 @@ class FunctionBuilder:
             f"{'   ' * self.indentation}def {self.func_name}({self._param_string()}) -> {self._output_types()}:"
         )
         lines.append(
-            f"{'   ' * self.indentation + 1}x = eth_abi.decode({self.param_types}, bytes.fromhex({...})"  # TODO: FIXME
+            f"{'   ' * (self.indentation + 1)}x = eth_abi.decode({self.param_types}, bytes.fromhex({...})"  # TODO: FIXME
         )
 
     def _param_string(self) -> str:  # TODO: replace this with python types instead of solidity types
